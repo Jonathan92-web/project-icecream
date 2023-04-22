@@ -1,0 +1,71 @@
+.header {
+    background-color: #FFB8CA;
+    height: 664px;
+    padding: 50px 16px 0;
+    position: relative;
+    
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        width: 541px;
+    }
+}
+
+.hd-title {
+    width: 277px;
+    height: 137px;
+}
+
+.hd-boxleft {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+
+    &__buttons {
+        padding-top: 24px;
+    }
+}
+
+.hd-info {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+
+    &__text {
+        width: 200px;
+    }
+}
+
+.hd-values {
+    position: absolute;
+    top: 152px;
+    right: 16px;
+}
+
+.hd-girl {
+    position: absolute;
+    bottom: 0;
+    right: 16px;
+}
+
+.hd-icecream {
+    position: absolute;
+    bottom: 0;
+    right: 328px;
+}
+
+.hd-circle {
+    position: absolute;
+    width: 534px;
+    height: 534px;
+    background-color: #FFA5BA;
+    border-radius: 50%;
+    top: 54px;
+    right: 149px;
+}

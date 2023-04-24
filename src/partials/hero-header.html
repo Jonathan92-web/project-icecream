@@ -22,11 +22,36 @@
     </div>
   </section>
   <section class="hd-info">
-    <img
+    <picture>
+      <source
+        media="(min-width 1200px)"
+        srcset="
+          ./images/desktop/milk-hero-desktop_1x.jpg,
+          ./images/desktop/milk-hero-desktop@2x.jpg
+        "
+      />
+      <source
+        media="(min-width 768px)"
+        srcset="
+          ./images/desktop/milk-hero-desktop_1x.jpg,
+          ./images/desktop/milk-hero-desktop@2x.jpg
+        "
+        type="image/webp"
+      />
+      <source
+        media="(max-width 767px)"
+        srcset="
+          ./images/desktop/milk-hero-desktop_1x.jpg,
+          ./images/desktop/milk-hero-desktop@2x.jpg
+        "
+      />
+    </picture>
+
+    <!-- <img
       src="./images/desktop/milk-hero-desktop@2x.jpg"
       alt="bio eco milk"
       width="213"
-    />
+    /> -->
     <p class="hd-info__text">
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore vel
       culpa qui sint deserunt natus, sunt ad cumque necessitatibus architecto

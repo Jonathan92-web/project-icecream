@@ -59,4 +59,147 @@
         margin-bottom: 20px;
         border-bottom: 1px solid #E1E1E1;
     }
+
+    &_telHover:hover{
+        color: #D41443;
+    }
+}
+
+
+.footer{
+    height: 400px;
+    width: 1200px;
+    background: #FFF5F6;
+    font-family: 'DM Sans';
+    display: flex;
+
+
+    &_boxButtoms{
+        height: 45px;
+        width: 378px;
+        margin-left: 34%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    &_buttoms{
+        width: 194px;
+        background: #FFFFFF;
+        border-radius: 22px;
+        border: 0px;
+        height: 100%;  
+        color: #D41443;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &_buttoms:hover{
+        background: #D41342;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+    &_modify{
+        width: 168px;
+    }
+
+    &_svg{
+        margin: 7px;
+    }
+
+    &_text{
+        width: 474px;
+        height: 116px;
+        font-family: 'Titan One';
+    }
+
+    &_h3{
+        color: #FFA5BA;
+        font-weight: 400;
+        font-size: 30px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+    }
+    &_h2{
+        width: 477px;
+        font-weight: 400;
+        font-size: 58px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #D41443;
+        position: relative;
+        bottom: 30px;
+    }
+
+    &_contacts{
+        width: 332px;
+        height: 116px;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+
+    &_contactsSvgBox{
+        width: 100%;
+        height: 85px;
+        display: flex;
+        justify-content: end;
+    }
+
+    &_contactsSvg{
+        margin-left: 30px;
+    }
+    &_contactsSvg:hover{
+        background-color: #D41443;
+       
+    }
+
+    &_contactsCell{
+        display: flex;
+        align-items: end;
+        font-family: 'DM Sans';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 0%;
+        letter-spacing: 0.02em;
+        color: #000000;
+    }
+    &_contactsP{
+        margin-left: 20px;
+    }
+    &_contactsP:hover{
+        color:#D41443;
+    }
+
+    &_containFather{
+        width: 1200px;
+        position: absolute;
+        top: 700px;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+}
+
+
+.derechos{
+    width: 1170px;
+    border-top: 1px solid #E1E1E1;
+    height: 30px;
+    position: absolute;
+    top: 947px;
+    left: 15px;
+    display: flex;
+
+
+    &_p{
+        width: 100%;
+        text-align: center;
+        line-height: 25%;
+        font-family: 'DM Sans';
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 0.02em;
+        color: #907E82;
+    }
 }

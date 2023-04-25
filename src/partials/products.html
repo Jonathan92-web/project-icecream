@@ -1,39 +1,138 @@
 <section class="products container" id="products">
-  <ul class="products__title-list list">
-    <li class="products__title-item">100% natural</li>
+  <ul class="products__title-list link">
+    <li class="products__title-item"><h3>100% natural</h3></li>
     <li class="products__title-item">
-      <h2>
+      <h2 class="products__title-main">
         <a href="#products" class="products__title-link link">PRODUCTS</a>
       </h2>
     </li>
   </ul>
   <div class="products__content">
-    <ul class="products__content-list list">
+    <ul class="products__content-list link">
       <li class="products__item products__item--bgicecream">
         <div class="products__card">
-          <h3 class="products__card-title">ice cream</h3>
-          <p class="products__card-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et
-          </p>
+          <div class="product__img-container">
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ../src/images/desktop/product-icecream-desktop_1x.png,
+                  ../src/images/desktop/product-icecream-desktop@2x.png
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ../src/images/tablet/product-icecream-tablet_1x.png,
+                  ../src/images/tablet/product-icecream-tablet@2x.png
+                "
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ../src/images/mobile/product-icecream-mobile_1x.png,
+                  ../src/images/mobile/product-icecream-mobile@2x.png
+                "
+              />
+              <img
+                src="./images/desktop/product-icecream-desktop_1x.png"
+                alt="ice cream"
+                style="width: auto"
+                class="products__img"
+              />
+            </picture>
+          </div>
+          <div class="products__card-content">
+            <h3 class="products__card-title">ice cream</h3>
+            <p class="products__card-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et
+            </p>
+          </div>
         </div>
       </li>
       <li class="products__item products__item--bgicecoffee">
         <div class="products__card">
-          <h3 class="products__card-title">ice coffee</h3>
-          <p class="products__card-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et
-          </p>
+          <div class="product__img-container">
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ../src/images/desktop/product-icecoffee-desktop_1x.png,
+                  ../src/images/desktop/product-icecoffee-desktop@2x.png
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ../src/images/tablet/product-icecoffee-tablet_1x.png,
+                  ../src/images/tablet/product-icecoffee-tablet@2x.png
+                "
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ../src/images/mobile/product-icecoffee-mobile_1x.png,
+                  ../src/images/mobile/product-icecoffee-mobile@2x.png
+                "
+              />
+              <img
+                src="./images/desktop/product-icecoffee-desktop_1x.png"
+                alt="ice coffee"
+                width="auto"
+                class="products__img"
+              />
+            </picture>
+          </div>
+          <div class="products__card-content">
+            <h3 class="products__card-title">ice coffee</h3>
+            <p class="products__card-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et
+            </p>
+          </div>
         </div>
       </li>
       <li class="products__item products__item--milkshakes">
         <div class="products__card">
-          <h3 class="products__card-title">milkshakes</h3>
-          <p class="products__card-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et
-          </p>
+          <div class="product__img-container">
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ../src/images/desktop/product-milkshakes-desktop_1x.png,
+                  ../src/images/desktop/product-milkshakes-desktop@2x.png
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ../src/images/tablet/product-milkshakes-tablet_1x.png,
+                  ../src/images/tablet/product-milkshakes-tablet@2x.png
+                "
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ../src/images/mobile/product-milkshakes-mobile_1x.png,
+                  ../src/images/mobile/product-milkshakes-mobile@2x.png
+                "
+              />
+              <img
+                src="./images/desktop/product-milkshakes-desktop_1x.png"
+                alt="milkshakes"
+                style="width: auto"
+                class="products__img"
+              />
+            </picture>
+          </div>
+          <div class="products__card-content">
+            <h3 class="products__card-title">milkshakes</h3>
+            <p class="products__card-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et
+            </p>
+          </div>
         </div>
       </li>
     </ul>

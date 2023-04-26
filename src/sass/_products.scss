@@ -103,6 +103,10 @@
   padding: 63px 60px;
   position: relative;
 
+  .product__img-container {
+    width: 100%;
+  }
+
   .products__card-title {
     font-weight: 400;
     font-size: 30px;

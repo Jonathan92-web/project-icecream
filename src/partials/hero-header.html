@@ -79,20 +79,20 @@
     <section class="hd-info">
       <picture>
         <source
-          media="(min-width 1200px)"
+          media="(min-width: 1200px)"
           srcset="
-            ./images/desktop/milk-hero-desktop_1x.jpg 1x,
-            ./images/desktop/milk-hero-desktop@2x.jpg 2x
+            ../src/images/desktop/milk-hero-desktop_1x.png,
+            ../src/images/desktop/milk-hero-desktop@2x.png
           "
         />
         <source
-          media="(min-width 768px)"
+          media="(min-width: 768px)"
           srcset="
-            ./images/tablet/mil-hero-tablet_1x.jpg 1x,
-            ./images/tablet/mil-hero-tablet@2x.jpg 2x
+            ../src/images/tablet/milk-hero-tablet_1x.png,
+            ../src/images/tablet/milk-hero-tablet@2x.png
           "
         />
-        <img src="#" alt="bio eco milk" />
+        <img src="#" alt="bio eco milk" style="width: auto" />
       </picture>
       <div>
         <p class="hd-info__text">
@@ -109,30 +109,60 @@
     </section>
     <section class="hd-values">
       <ul class="list hd-values__list">
-        <li class="hd-values__item">
-          16
-          <div class="hd-values__decoration"></div>
-          <div class="hd-values__item--desc">cafes</div>
-        </li>
-        <li class="hd-values__item">
-          23
-          <div class="hd-values__decoration"></div>
-          <div class="hd-values__item--desc">food trucks</div>
-        </li>
+        <li class="hd-values__item">16</li>
+        <li class="hd-values__item"></li>
+        <li class="hd-values__item hd-values__item--desc">cafes</li>
+        <li class="hd-values__item">23</li>
+        <li class="hd-values__item"></li>
+        <li class="hd-values__item hd-values__item--desc">food trucks</li>
       </ul>
     </section>
     <div class="hd-circle"></div>
-    <img
-      src="./images/desktop/girl-hero-desktop.png"
-      alt="girl taste an ice cream"
-      width="304"
-      class="hd-girl"
-    />
-    <img
-      src="./images/desktop/icecream-hero-desktop.png"
-      alt="ice cream"
-      width="236"
-      class="hd-icecream"
-    />
+    <picture>
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          ../src/images/desktop/girl-hero-desktop_1x.png,
+          ../src/images/desktop/girl-hero-desktop@2x.png
+        "
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ../src/images/tablet/girl-hero-tablet_1x.png,
+          ../src/images/tablet/girl-hero-tablet@2x.png
+        "
+      />
+      <img
+        src="#"
+        alt="girl taste ice cream"
+        style="width: auto"
+        class="hd-girl"
+      />
+    </picture>
+    <picture>
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          ../src/images/desktop/icecream-hero-desktop_1x.png,
+          ../src/images/desktop/icecream-hero-desktop@2x.png
+        "
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ../src/images/tablet/icecream-hero-tablet_1x.png,
+          ../src/images/tablet/icecream-hero-tablet@2x.png
+        "
+      />
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ../src/images/mobile/icecream-hero-mobile_1x.png,
+          ../src/images/mobile/icecream-hero-mobile@2x.png
+        "
+      />
+      <img src="#" alt="ice cream" style="width: auto" class="hd-icecream" />
+    </picture>
   </section>
 </header>

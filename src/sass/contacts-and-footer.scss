@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-between;
 
+    
     &_box{
         height: 538px;
         width: 368px;
@@ -13,29 +14,62 @@
         border-radius: 24px;  
     }
 
+    &_h3{
+        font-family: 'DM Sans';
+        font-size: 16px;
+        text-align: center;
+        line-height: 28px;
+        color: white;
+    }
+
     &_inf{
         display: block;
         height: 458px;
         width: 288px;
         margin: 40px;
+    }
 
-        h3{
-            font-size: 16px;
-            text-align: center;
-            line-height: 28px;
-            color: white;
-        }
+    &_ul{
+        margin-bottom: 30px;
+        width: 288px;
+        padding: 0px;
+        border-bottom: 1px solid #E1E1E1;
+    }
+    &_ulTwo{
+        margin-bottom: 66px;
+        width: 288px;
+        padding: 0px;
+    }
+    &_ulSpacin{
+        margin-bottom: 1px;
+    }
+    &_li{
+        font-family: 'DM Sans';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 183%;
+        letter-spacing: 0.04em;
+        list-style: none;
+    }
+    &_liTwo{
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 317%;
+        list-style: none;
+    }
+    &_liPink{
+        color: #FFA5BA;
+    }
+    &_hover:hover{
+        color: #D41443;
     }
 
     p{
         font-size: 16px;
         line-height: 183%;
         letter-spacing: 0.04em;
-    }
-
-    &_text{
-        line-height: 10px;
-        color: #FFA5BA;
     }
 
     &_h3{
@@ -54,14 +88,40 @@
         ;
     }
 
-    &_borderline{
-        width: 288px;
-        margin-bottom: 20px;
-        border-bottom: 1px solid #E1E1E1;
+
+    &_boxButtoms{
+        height: 45px;
+        width: 378px;
+        position: absolute;
+        top: 601px;
+        left: 407px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
     }
 
-    &_telHover:hover{
+    &_buttoms{
+        width: 194px;
+        background: #FFFFFF;
+        border-radius: 22px;
+        border: 0px;
+        height: 100%;  
         color: #D41443;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &_buttoms:hover{
+        background: #D41342;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+    &_modify{
+        width: 168px;
+    }
+
+    &_svg{
+        margin: 7px;
     }
 }
 
@@ -151,14 +211,13 @@
     }
     &_contactsSvg:hover{
         background-color: #D41443;
-       
     }
 
     &_contactsCell{
         display: flex;
         align-items: end;
         font-family: 'DM Sans';
-        font-weight: 700;
+        font-weight: 500;
         font-size: 16px;
         line-height: 0%;
         letter-spacing: 0.02em;

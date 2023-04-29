@@ -27,9 +27,9 @@
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 186%;
+    line-height: 165%;
     /* or 30px */
-    letter-spacing: 0.04em;
+
     color: $text-black;
     position: absolute;
     width: 750px;
@@ -85,84 +85,4 @@
 .customer__icon__home-circule {
     width: 72px;
     height: 12px;
-}
-
-
-
-
-@media screen and (min-width: 768px) {
-    .container {
-        max-width: 768px;
-    }
-
-    .costumer__paragraph_item__icon {
-        width: 620px;
-        height: 164px;
-    }
-
-    .customer__item__paragraph {
-        width: 514.12px;
-        height: 83px;
-        font-size: 14px;
-        line-height: 216%;
-        letter-spacing: 0.04em;
-        margin-bottom: 16px;
-
-    }
-
-    .customer__item__red__circule {
-
-        width: 4px;
-        height: 4px;
-
-    }
-
-    .customer__item__name {
-        width: 172px;
-        height: 25px;
-        font-size: 16px;
-        line-height: 186%;
-        margin-bottom: 16px;
-
-    }
-
-    .customer__icon__home-circule {
-        height: 12px;
-    }
-
-}
-
-@media screen and (max-width: 767px) {
-    .container {
-        max-width: 480px;
-    }
-
-    .costumer__paragraph_item__icon {
-        width: 280px;
-        height: 308px;
-    }
-
-
-    .customer__item__paragraph {
-        width: 157px;
-        height: 239px;
-
-        font-size: 12px;
-        line-height: 255%;
-        margin-bottom: 36px;
-    }
-
-    .customer__icon__red-circule {
-        width: 172px;
-        height: 73px;
-    }
-
-    .customer__item__name {
-        width: 172px;
-        height: 25px;
-        font-size: 14px;
-        line-height: 186%;
-        margin-bottom: 16PX;
-    }
-
 }

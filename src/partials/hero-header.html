@@ -1,5 +1,32 @@
 <header class="header">
-  <section class="container container--position">
+  <div><div class="hd-circle"></div></div>
+  <div class="container container--position">
+    <div class="hd-icecream">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ../src/images/desktop/icecream-hero-desktop_1x.png,
+            ../src/images/desktop/icecream-hero-desktop@2x.png
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ../src/images/tablet/icecream-hero-tablet_1x.png,
+            ../src/images/tablet/icecream-hero-tablet@2x.png
+          "
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ../src/images/mobile/icecream-hero-mobile_1x.png,
+            ../src/images/mobile/icecream-hero-mobile@2x.png
+          "
+        />
+        <img src="#" alt="ice cream" />
+      </picture>
+    </div>
     <svg
       aria-hidden="true"
       style="position: absolute; width: 0; height: 0; overflow: hidden"
@@ -49,13 +76,18 @@
         </symbol>
       </defs>
     </svg>
+    <div class="logo-mobile">
+      <svg class="logo">
+        <use xlink:href="#icon-icecream"></use>
+      </svg>
+    </div>
     <nav class="nav">
       <div class="logo">
         <svg class="logo">
           <use xlink:href="#icon-icecream"></use>
         </svg>
       </div>
-      <ul class="list nav__list">
+      <ul class="link nav__list">
         <li class="nav__item"><a class="link" href="#">Home</a></li>
         <li class="nav__item"><a class="link" href="#">About us</a></li>
         <li class="nav__item"><a class="link" href="#">How it's made?</a></li>
@@ -69,10 +101,10 @@
         </svg>
       </button>
     </nav>
-    <section class="hd-boxleft">
+    <div class="hd-boxleft">
       <h1 class="hd-title">
         ICE CREAM MADE WITH
-        <div class="hd-title--red">PASSION</div>
+        <span class="hd-title--red">PASSION</span>
       </h1>
       <div class="hd-boxleft__buttons">
         <button class="hd-boxleft__btn pointer" type="button">Products</button>
@@ -80,8 +112,8 @@
           How it's made?
         </button>
       </div>
-    </section>
-    <section class="hd-info">
+    </div>
+    <div class="hd-info">
       <picture>
         <source
           media="(min-width: 1200px)"
@@ -110,9 +142,9 @@
           </svg>
         </div>
       </div>
-    </section>
+    </div>
     <section class="hd-values">
-      <ul class="list hd-values__list">
+      <ul class="link hd-values__list">
         <li class="hd-values__item">16</li>
         <li class="hd-values__item"></li>
         <li class="hd-values__item hd-values__item--desc">cafes</li>
@@ -121,55 +153,30 @@
         <li class="hd-values__item hd-values__item--desc">food trucks</li>
       </ul>
     </section>
-    <div class="hd-circle"></div>
-    <picture>
-      <source
-        media="(min-width: 1200px)"
-        srcset="
-          ../src/images/desktop/girl-hero-desktop_1x.png,
-          ../src/images/desktop/girl-hero-desktop@2x.png
-        "
-      />
-      <source
-        media="(min-width: 768px)"
-        srcset="
-          ../src/images/tablet/girl-hero-tablet_1x.png,
-          ../src/images/tablet/girl-hero-tablet@2x.png
-        "
-      />
-      <img
-        src="#"
-        alt="girl taste ice cream"
-        style="width: auto"
-        class="hd-girl"
-      />
-    </picture>
-    <picture>
-      <source
-        media="(min-width: 1200px)"
-        srcset="
-          ../src/images/desktop/icecream-hero-desktop_1x.png,
-          ../src/images/desktop/icecream-hero-desktop@2x.png
-        "
-      />
-      <source
-        media="(min-width: 768px)"
-        srcset="
-          ../src/images/tablet/icecream-hero-tablet_1x.png,
-          ../src/images/tablet/icecream-hero-tablet@2x.png
-        "
-      />
-      <source
-        media="(max-width: 767px)"
-        srcset="
-          ../src/images/mobile/icecream-hero-mobile_1x.png,
-          ../src/images/mobile/icecream-hero-mobile@2x.png
-        "
-      />
-      <img src="#" alt="ice cream" style="width: auto" class="hd-icecream" />
-    </picture>
-  </section>
+
+    <divc class="hero__img-girl">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ../src/images/desktop/girl-hero-desktop_1x.png,
+            ../src/images/desktop/girl-hero-desktop@2x.png
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ../src/images/tablet/girl-hero-tablet_1x.png,
+            ../src/images/tablet/girl-hero-tablet@2x.png
+          "
+        />
+        <img
+          src="#"
+          alt="girl taste ice cream"
+          style="width: auto"
+          class="hd-girl"
+        />
+      </picture>
+    </divc>
+  </div>
 </header>
-<svg class="hd-info__arrow">
-  <use xlink:href="#arrow_right"></use>
-</svg>

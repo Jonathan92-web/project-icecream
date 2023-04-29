@@ -1,12 +1,14 @@
 .header {
     background-color: $bg-hero;
-    height: 664px;
-    padding: 40px 16px 0;
+    max-width: 767px;
+    min-height: 502px;
+   
 }
 
 .container--position {
     position: relative;
-    height: 624px;
+   
+   
 }
 
 .logo {
@@ -27,7 +29,6 @@
     }
 
     &__item {
-        font-family: 'DM Sans';
         font-weight: 700;
         font-size: 16px;
         line-height: 1.3;
@@ -43,7 +44,6 @@
         width: 159px;
         height: 44px;
         border-radius: 22px;
-        font-family: 'DM Sans';
         font-weight: 700;
         font-size: 16px;
         line-height: 1.3;
@@ -66,16 +66,16 @@
 }
 
 .hd-title {
-    font-family: 'Titan One';
+    
     font-weight: 400;
-    font-size: 38px;
+    font-size: 26px;
     line-height: 1.15;
-    width: 277px;
-    height: 137px;
+    width: 218px;
+    height: 106px;
     color: $text-white;
-
+z-index: 2;
     &--red {
-        font-size: 58px;
+        font-size: 49px;
         color: $primary-color;
     }
 }
@@ -83,10 +83,11 @@
 .hd-boxleft {
     display: flex;
     flex-direction: column;
-    margin-top: 60px;
+    margin-top: 136px;
 
     &__buttons {
         padding-top: 24px;
+        z-index: 2;
     }
 
     &__btn:nth-child(1) {
@@ -176,7 +177,7 @@
 }
 
 .hd-values__item {
-    font-family: 'Titan One';
+    font-family:'Titan One';
     font-weight: 400;
     font-size: 46px;
     line-height: 1.15;
@@ -186,7 +187,6 @@
     z-index: 2;
 
     &--desc {
-        font-family: 'DM Sans';
         font-weight: 400;
         font-size: 14px;
         line-height: 1.28;
@@ -228,17 +228,160 @@
 .hd-icecream {
     position: absolute;
     bottom: 0;
-    right: 328px;
-    z-index: 2;
+    
 }
 
 .hd-circle {
-    position: absolute;
-    width: 534px;
-    height: 534px;
+   
+    width: 346px;
+    height: 344px;
     background-color: $secondary-color;
     border-radius: 50%;
-    top: 14px;
-    right: 149px;
-    z-index: 1;
+    top: 52px;
+position: fixed;
+        top: 82px;
+            left:10%;
+            overflow: hidden;
+}
+
+
+@media screen and (max-width: 767px) {
+    .header{
+        padding: 8px 0 0 0;
+    }
+    .nav__list, .nav__btn, .hero__img-girl, .hd-values__list, .hd-info{
+        display: none;
+    }
+    .nav{
+        display: none;
+    }
+    .hd-icecream{
+        left: 40%;
+        z-index: 2;
+        height: max-content;
+    }
+        .hd-boxleft {
+           
+            &__buttons {
+                padding-top: 24px;
+            }
+    
+            &__btn:nth-child(1) {
+                width: 62px;
+                height: 24px;
+                font-size: 8px;
+            }
+    
+            &__btn:nth-child(2) {
+                width: 82px;
+                height: 24px;
+                font-size: 8px;
+            }
+        }
+}
+
+@media screen and (min-width: 768px) {
+    
+    .header {
+    
+            min-height: 416px;
+            max-width: 100vw;
+        }
+    
+        .logo-mobile {
+            display: none;
+        }
+    
+        .container--position {
+            padding-top: 32px;
+            position: relative;
+            min-height: 416px;
+    
+        }
+    
+        .hd-circle {
+            position: absolute;
+            width: 335px;
+            height: 333px;
+            top: 52px;
+            left: 44%;
+            z-index: 0;
+        }
+    
+        .hd-boxleft {
+            margin-top: 60px;
+        }
+    
+        .hd-title {
+            font-weight: 400;
+            font-size: 38px;
+            line-height: 1.15;
+            width: 277px;
+            height: 137px;
+    
+            &--red {
+                font-size: 58px;
+            }
+        }
+    
+        .hd-icecream {
+            position: absolute;
+            bottom: 0;
+            right: 328px;
+            z-index: 2;
+        }
+
+}
+
+
+
+@media screen and (min-width: 1280px) {
+    .header {
+       
+            min-height: 664px;
+           max-width: 100vw;
+        }
+
+        .logo-mobile{
+            display: none;
+        }    
+
+    .container--position {
+        padding-top: 40px;
+            position: relative;
+            min-height: 664px;
+            
+        }
+
+    .hd-circle{
+        position: absolute;
+        width: 534px;
+        height: 534px;
+        top: 52px;
+        left: 44%;
+        z-index: 0;
+    }    
+
+    .hd-boxleft {
+         margin-top: 60px;
+        }
+
+    .hd-title {
+        font-weight: 400;
+        font-size: 38px;
+        line-height: 1.15;
+        width: 277px;
+        height: 137px;
+    
+            &--red {
+                font-size: 58px;
+            }
+        }
+
+        .hd-icecream {
+            position: absolute;
+            bottom: 0;
+            right: 328px;
+            z-index: 2;
+        }
 }

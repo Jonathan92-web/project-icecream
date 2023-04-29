@@ -3,7 +3,23 @@
         <ul class="list customer__list">
             <li class="customer__item__img">
                 <picture>
-                    <source media="(min-width: 1200px)" srcset="
+                    <source media="(min-width: 1280px)" srcset="
+                ./images/desktop/customer1-desktop_1x.jpg 1x,
+                ./images/desktop/customer1-desktop@2x.jpg 2x,
+                ./images/desktop/customer2-desktop_1x.jpg 1x,
+                ./images/desktop/customer2-desktop@2x.jpg 2x,
+                ./images/desktop/customer3-desktop_1x.jpg 1x,
+                ./images/desktop/customer3-desktop@2x.jpg 2x
+            " />
+                    <source media="(min-width: 768px)" srcset="
+                ./images/desktop/customer1-desktop_1x.jpg 1x,
+                ./images/desktop/customer1-desktop@2x.jpg 2x,
+                ./images/desktop/customer2-desktop_1x.jpg 1x,
+                ./images/desktop/customer2-desktop@2x.jpg 2x,
+                ./images/desktop/customer3-desktop_1x.jpg 1x,
+                ./images/desktop/customer3-desktop@2x.jpg 2x
+            " />
+                    <source media="(max-width: 767px)" srcset="
                 ./images/desktop/customer1-desktop_1x.jpg 1x,
                 ./images/desktop/customer1-desktop@2x.jpg 2x,
                 ./images/desktop/customer2-desktop_1x.jpg 1x,
@@ -47,8 +63,8 @@
 
 
             <li class="customer__icon__home-circule">
-                <a href="#" class="customer__item__link">
-                    <svg>
+                <a href="#">
+                    <svg class="customer__item__icon-home">
                         <use href="./images/icons.svg#home-circule"></use>
                     </svg>
             </li>

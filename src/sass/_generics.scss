@@ -16,6 +16,7 @@ h1, h2, h3 {
 @media screen and (max-width: 767px) {
     .container {
         min-height: 502px;
+        min-height: 502px;
         max-width: 480px;
     }
 }
@@ -31,6 +32,12 @@ h1, h2, h3 {
     max-width: 1200px;
   }
 }
+
+.customer {
+    padding: 60px 0;
+}
+
+
 
 .link {
   text-decoration: none;

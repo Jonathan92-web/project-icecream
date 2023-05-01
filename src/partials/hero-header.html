@@ -1,6 +1,5 @@
 <header class="header">
   <div>
-    <div class="hd-circle"></div>
     <div class="hd-icecream">
       <picture>
         <source
@@ -78,17 +77,35 @@
         </symbol>
       </defs>
     </svg>
-    <div class="logo-mobile">
-      <svg class="logo">
-        <use xlink:href="#icon-icecream"></use>
-      </svg>
+    <div>
+      <div class="hd-circle"></div>
     </div>
+
     <nav class="nav">
       <div class="logo">
         <svg class="logo">
           <use xlink:href="#icon-icecream"></use>
         </svg>
       </div>
+      <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg
+          width="24"
+          height="24"
+          fill=""
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
       <ul class="link nav__list">
         <li class="nav__item"><a class="link" href="#">Home</a></li>
         <li class="nav__item"><a class="link" href="#">About us</a></li>

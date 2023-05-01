@@ -3,6 +3,7 @@
     max-width: 767px;
     min-height: 502px;
    position: relative;
+   
 }
 
 .container--position {
@@ -14,6 +15,12 @@
 .logo {
     width: 200px;
     height: 50px;
+}
+
+.logo-mobile{
+    display: flex;
+        align-items: center;
+        justify-content: space-between;
 }
 
 .nav {
@@ -223,9 +230,7 @@ position: fixed;
     .nav__list, .nav__btn, .hero__img-girl, .hd-values__list, .hd-info{
         display: none;
     }
-    .nav{
-        display: none;
-    }
+  
     .hd-icecream{
         left: 40%;
         z-index: 2;
@@ -315,6 +320,8 @@ position: fixed;
                         width: 114px;
                         font-weight: 400;
                         font-size: 8px;
+                        line-height: 140%;
+                        color: $text-white;
                     }
                 }
 

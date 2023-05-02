@@ -18,9 +18,6 @@
     align-items: center;
     gap: 60px;
     z-index: 2;
-
-    // bottom: -45%;
-    // z-index: 2;
   }
 
   &__box-list {
@@ -155,19 +152,12 @@
     padding-bottom: 400px;
     width: 100%;
     height: 500px;
-    background-color: $bg-section;
-    // padding-top: 300px;
-    font-family: 'DM Sans';
-    display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 32px;
 
     &__content {
       max-width: 768px;
-      // position: absolute;
-      // z-index: 2;
-      // bottom: 30%;
     }
 
     &__box-list {
@@ -296,9 +286,6 @@
 
     &__content {
       max-width: 1200px;
-      // position: absolute;
-      // z-index: 2;
-      // bottom: 25%;
     }
 
     &__box-list {

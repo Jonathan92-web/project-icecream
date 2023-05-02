@@ -216,12 +216,18 @@ z-index: 2;
     background-color: $secondary-color;
     border-radius: 50%;
     top: 52px;
-position: fixed;
-        top: 90px;
-            left:21%;
-            overflow: hidden;
+    position: absolute;
+    top: 90px;
+    left:21%;
+    overflow: hidden;
 }
 
+@media screen and (max-width: 440px){
+    .hd-circle{
+        width: 280px;
+        height: 280px;
+        left: 10%;    }
+}
 
 @media screen and (max-width: 767px) {
     .header{

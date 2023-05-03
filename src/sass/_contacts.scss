@@ -32,13 +32,11 @@
   &_box {
     width: 100%;
     flex-basis: calc((100% - 150px) / 1);
-    background: #ffffff;
+    background: $text-white;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
     padding: 40px 32px;
-    transition-property: box-shadow scale;
-    transition-duration: 300ms;
-    transition-timing-function: linear;
+    transition: all 250ms ease-in-out;
 
     &:hover {
       transform: scale(1.03);
@@ -98,7 +96,7 @@
     list-style: none;
   }
   &_liPink {
-    color: #ffa5ba;
+    color: $secondary-color;
   }
 
   p {
@@ -133,7 +131,7 @@
 
   &_buttoms {
     width: 194px;
-    background: #ffffff;
+    background: $text-white;
     border-radius: 22px;
     border: 0px;
     height: 45px;
@@ -147,7 +145,7 @@
     transition-timing-function: linear;
 
     &:hover {
-      background: #d41342;
+      background: $primary-color;
       color: #ffffff;
       cursor: pointer;
       transform: translateY(-10px);
@@ -175,10 +173,12 @@
     height: 500px;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 32px;
 
     &__content {
       max-width: 768px;
+      width: 100%;
     }
 
     &__box-list {
@@ -199,7 +199,7 @@
       font-size: 16px;
       text-align: center;
       line-height: 28px;
-      color: white;
+      color: $text-white;
     }
 
     &_inf {
@@ -234,14 +234,6 @@
       font-size: 14px;
       line-height: 317%;
       list-style: none;
-    }
-    &_liPink {
-      color: #ffa5ba;
-    }
-
-    &_hover:hover {
-      color: $primary-color;
-      cursor: pointer;
     }
 
     p {
@@ -285,6 +277,7 @@
 
     &__content {
       max-width: 1200px;
+      width: 100%;
     }
 
     &__box-list {
@@ -306,7 +299,6 @@
       font-size: 16px;
       text-align: center;
       line-height: 28px;
-      color: white;
     }
 
     &_inf {
@@ -342,12 +334,6 @@
       font-size: 16px;
       line-height: 317%;
       list-style: none;
-    }
-    &_liPink {
-      color: #ffa5ba;
-    }
-    &_hover:hover {
-      color: #d41443;
     }
 
     p {

@@ -107,7 +107,7 @@
       font-weight: 700;
       font-size: 14px;
       letter-spacing: 0.02em;
-      color: #907e82;
+      color: $detail-color-text;
       transition-property: transform;
       transition-duration: 200ms;
       transition-timing-function: linear;
@@ -133,7 +133,7 @@
     }
 
     &__h3 {
-      color: #ffa5ba;
+      color: $secondary-color;
       font-weight: 400;
       font-size: 26px;
       letter-spacing: 0.04em;
@@ -160,13 +160,13 @@
       width: 100%;
       display: flex;
       justify-content: space-between;
-      padding-left: 200px;
+      padding-left: 150px;
       margin-bottom: 40px;
     }
 
     &__svg-link {
       background-color: $bg-icon-social;
-      fill: white;
+      fill: $text-white;
       border-radius: 80%;
       width: 34px;
       height: 34px;
@@ -185,7 +185,7 @@
         font-weight: 700;
         font-size: 14px;
         letter-spacing: 0.02em;
-        color: #907e82;
+        color: $detail-color-text;
       }
     }
   }
@@ -205,7 +205,6 @@
 
     &__h3 {
       max-width: 474px;
-      color: #ffa5ba;
       font-weight: 400;
       font-size: 30px;
       letter-spacing: 0.04em;
@@ -238,7 +237,7 @@
 
     &__svg-link {
       background-color: $bg-icon-social;
-      fill: white;
+      fill: $text-white;
       border-radius: 80%;
       width: 34px;
       height: 34px;
@@ -268,7 +267,6 @@
         font-weight: 700;
         font-size: 14px;
         letter-spacing: 0.02em;
-        color: #907e82;
       }
     }
   }

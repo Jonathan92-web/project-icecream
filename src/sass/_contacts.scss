@@ -36,6 +36,15 @@
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
     padding: 40px 32px;
+    transition-property: box-shadow scale;
+    transition-duration: 300ms;
+    transition-timing-function: linear;
+
+    &:hover {
+      transform: scale(1.03);
+      box-shadow: 1px 1px 20px 5px rgba(212, 19, 66, 0.3);
+      cursor: pointer;
+    }
   }
 
   &_h3 {
@@ -50,6 +59,10 @@
     max-width: 280px;
   }
 
+  &__link:hover {
+    color: $primary-color;
+  }
+
   &_ul {
     margin-bottom: 30px;
     padding: 0px;
@@ -58,10 +71,7 @@
 
   &_ulTwo {
     padding: 0;
-
-    &:hover {
-      color: $primary-color;
-    }
+    margin: 0;
   }
 
   &_ulSpacin {
@@ -122,27 +132,38 @@
   }
 
   &_buttoms {
-    width: 161px;
+    width: 194px;
     background: #ffffff;
     border-radius: 22px;
     border: 0px;
-    height: 44px;
+    height: 45px;
     color: $primary-color;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  &_buttoms:hover {
-    background: #d41342;
-    color: #ffffff;
-    cursor: pointer;
-  }
-  &_modify {
-    width: 168px;
+    gap: 10px;
+    transition-property: transform;
+    transition-duration: 200ms;
+    transition-timing-function: linear;
+
+    &:hover {
+      background: #d41342;
+      color: #ffffff;
+      cursor: pointer;
+      transform: translateY(-10px);
+    }
+    &:hover .contacts_buttomsSvg {
+      stroke: #ffffff;
+      fill: none;
+      cursor: pointer;
+    }
   }
 
-  &_svg {
-    margin: 7px;
+  &_buttomsSvg {
+    width: 12px;
+    height: 12px;
+    stroke: $primary-color;
+    fill: none;
   }
 }
 
@@ -217,8 +238,10 @@
     &_liPink {
       color: #ffa5ba;
     }
+
     &_hover:hover {
       color: $primary-color;
+      cursor: pointer;
     }
 
     p {
@@ -248,30 +271,6 @@
       flex-direction: row;
       justify-content: center;
       align-items: center;
-    }
-
-    &_buttoms {
-      width: 194px;
-      background: #ffffff;
-      border-radius: 22px;
-      border: 0px;
-      height: 100%;
-      color: $primary-color;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    &_buttoms:hover {
-      background: #d41342;
-      color: #ffffff;
-      cursor: pointer;
-    }
-    &_modify {
-      width: 168px;
-    }
-
-    &_svg {
-      margin: 7px;
     }
   }
 }
@@ -370,38 +369,6 @@
     &_FOODTRUCK {
       width: 138px;
       background: #c2e297;
-    }
-
-    &_boxButtoms {
-      height: 45px;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-    }
-
-    &_buttoms {
-      width: 194px;
-      background: #ffffff;
-      border-radius: 22px;
-      border: 0px;
-      height: 100%;
-      color: #d41443;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    &_buttoms:hover {
-      background: #d41342;
-      color: #ffffff;
-      cursor: pointer;
-    }
-    &_modify {
-      width: 168px;
-    }
-
-    &_svg {
-      margin: 7px;
     }
   }
 }

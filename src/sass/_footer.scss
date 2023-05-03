@@ -1,5 +1,4 @@
 .footer {
-  // padding-top: 1400px;
   width: 100%;
   background: $bg-section;
   font-family: 'DM Sans';
@@ -20,39 +19,6 @@
   &__text {
     padding: 0;
     margin: 0;
-  }
-
-  &_boxButtoms {
-    height: 45px;
-    width: 378px;
-    margin-left: 34%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-
-  &_buttoms {
-    width: 194px;
-    background: $text-white;
-    border-radius: 22px;
-    border: 0px;
-    height: 100%;
-    color: $primary-color;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  &_buttoms:hover {
-    background: $primary-color;
-    color: $text-white;
-    cursor: pointer;
-  }
-  &_modify {
-    width: 168px;
-  }
-
-  &_svg {
-    margin: 7px;
   }
 
   &__h3 {
@@ -98,6 +64,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color 250ms ease-in-out;
+
+    &:hover {
+      background-color: $primary-color;
+    }
   }
 
   &_contactsCell {
@@ -112,9 +83,13 @@
   }
   &_contactsP {
     margin-left: 20px;
+    transition-property: transform;
+    transition-duration: 200ms;
+    transition-timing-function: linear;
   }
   &_contactsP:hover {
     color: $primary-color;
+    transform: scale(1.15);
   }
 
   .derechos {
@@ -133,20 +108,20 @@
       font-size: 14px;
       letter-spacing: 0.02em;
       color: #907e82;
+      transition-property: transform;
+      transition-duration: 200ms;
+      transition-timing-function: linear;
+
+      &:hover {
+        transform: scale(1.15);
+      }
     }
   }
 }
 
 @media screen and (min-width: 768px) {
   .footer {
-    // padding-top: 600px;
     width: 100%;
-    background: $bg-section;
-    font-family: 'DM Sans';
-    display: flex;
-    flex: wrap;
-    justify-content: center;
-    position: relative;
 
     &__containFather {
       max-width: 768px;
@@ -155,38 +130,6 @@
       justify-content: center;
       align-items: center;
       gap: 128px;
-    }
-
-    &_boxButtoms {
-      height: 45px;
-      width: 378px;
-      display: flex;
-      align-items: center;
-      justify-content: space-evenly;
-    }
-
-    &_buttoms {
-      width: 194px;
-      background: #ffffff;
-      border-radius: 22px;
-      border: 0px;
-      height: 100%;
-      color: #d41443;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    &_buttoms:hover {
-      background: #d41342;
-      color: #ffffff;
-      cursor: pointer;
-    }
-    &_modify {
-      width: 168px;
-    }
-
-    &_svg {
-      margin: 7px;
     }
 
     &__h3 {
@@ -232,23 +175,6 @@
       align-items: center;
     }
 
-    &_contactsCell {
-      display: flex;
-      align-items: end;
-      font-family: 'DM Sans';
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 0%;
-      letter-spacing: 0.02em;
-      color: #000000;
-    }
-    &_contactsP {
-      margin-left: 20px;
-    }
-    &_contactsP:hover {
-      color: $primary-color;
-    }
-
     .derechos {
       width: 100%;
 
@@ -267,14 +193,7 @@
 
 @media screen and (min-width: 1280px) {
   .footer {
-    // padding-top: 700px;
     width: 100%;
-    background: $bg-section;
-    font-family: 'DM Sans';
-    display: flex;
-    flex: wrap;
-    justify-content: center;
-    position: relative;
 
     &__containFather {
       max-width: 1200px;
@@ -282,38 +201,6 @@
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
-    }
-
-    &_boxButtoms {
-      height: 45px;
-      width: 378px;
-      display: flex;
-      align-items: center;
-      justify-content: space-evenly;
-    }
-
-    &_buttoms {
-      width: 194px;
-      background: #ffffff;
-      border-radius: 22px;
-      border: 0px;
-      height: 100%;
-      color: #d41443;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    &_buttoms:hover {
-      background: #d41342;
-      color: #ffffff;
-      cursor: pointer;
-    }
-    &_modify {
-      width: 168px;
-    }
-
-    &_svg {
-      margin: 7px;
     }
 
     &__h3 {
@@ -369,12 +256,6 @@
       line-height: 0%;
       letter-spacing: 0.02em;
       color: #000000;
-    }
-    &_contactsP {
-      margin-left: 20px;
-    }
-    &_contactsP:hover {
-      color: $primary-color;
     }
 
     .derechos {

@@ -22,13 +22,21 @@
   cursor: pointer;
 }
 
-.products__title-item:first-child {
+.products__title-secondary {
   color: $secondary-color;
   font-weight: 400;
   font-size: 18px;
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+}
+
+.products__title-list {
+  transition: all 250ms ease-in-out;
+
+  &:hover {
+    transform: scale(1.5);
+  }
 }
 
 .products__title-link {
@@ -55,7 +63,7 @@
   align-items: center;
   position: relative;
   padding: 100px 40px 40px 40px;
-  transition: transform 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
 
   &:hover {
     cursor: pointer;

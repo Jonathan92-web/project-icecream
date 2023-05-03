@@ -16,7 +16,7 @@
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #ffa5ba;
+  color: $secondary-color;
   position: absolute;
   width: 550px;
   height: 34px;
@@ -32,7 +32,7 @@
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #d41443;
+  color: $primary-color;
   position: absolute;
   width: 900px;
   height: 66px;
@@ -60,7 +60,7 @@
   font-size: 14px;
   line-height: 194%;
   letter-spacing: 0.04em;
-  color: #907e82;
+  color: $detail-color-text;
   position: absolute;
   width: 463px;
   height: 155px;
@@ -73,7 +73,7 @@
   height: 44px;
   left: 616px;
   top: 750px;
-  background: #ffffff;
+  background: $text-white;
   border-radius: 22px;
   font-family: 'DM Sans';
   font-style: normal;
@@ -83,7 +83,7 @@
   display: flex;
   align-items: center;
   text-align: center;
-  color: #d41443;
+  color: $primary-color;
   cursor: pointer;
   border: 1px;
 }
@@ -119,7 +119,7 @@
   line-height: 66px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #d41443;
+  color: $primary-color;
 }
 .letter-6 p {
   font-family: 'DM Sans';
